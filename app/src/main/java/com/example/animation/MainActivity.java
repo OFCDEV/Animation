@@ -11,10 +11,14 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView kakashri = (ImageView) findViewById(R.id.kakashri);
 
-        ImageView Naruto = (ImageView) findViewById(R.id.Naruto);
 
-        kakashri.animate().alpha(0f).setDuration(2000);
-        Naruto.animate().alpha(1f).setDuration(2000);
+        //kakashri.animate().alpha(0f).setDuration(2000);
+        kakashri.animate().translationXBy(1000f).setDuration(2000);
+        kakashri.animate().rotation(1800f).setDuration(2000);
+
+
+        //ImageView Naruto = (ImageView) findViewById(R.id.Naruto);
+        //Naruto.animate().alpha(1f).setDuration(2000);
 
     }
 
@@ -22,5 +26,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //ImageView kakashri = (ImageView) findViewById(R.id.kakashri);
+        //kakashri.setTranslationX(-1000f);
     }
 }
